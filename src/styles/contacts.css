@@ -1,0 +1,23 @@
+footer {
+  padding: 20px 30px;
+  width: 100%;
+
+  color: #F7F3ED;
+  font-weight: 600;
+
+  background-color: #006ab7;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social_media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer>img {
+  height: 41px;
+}

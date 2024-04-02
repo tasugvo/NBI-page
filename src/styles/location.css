@@ -1,0 +1,69 @@
+.location {
+  padding: 15px;
+  height: 40vh;
+  max-height: 570px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  position: relative;
+}
+.location::after {
+  content: "";
+
+  width: 100%;
+  height: 70%;
+
+  background-color: #E5E0E0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.location>.map {
+  width: 60%;
+  height: 100%;
+
+  border-radius: 40px;
+  border: 4px solid #006AB7;
+
+  overflow: hidden;
+}
+.map>* {
+  width: 100%;
+  height: 100%;
+}
+
+.location_detail {
+  padding: 15px;
+  width: 38%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+
+}
+.location_detail h2 {
+  color: #006AB7;
+}
+.location_detail>div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.location_detail p,
+.location_detail span {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.phone_number {
+  display: flex;
+  align-items: center;
+}

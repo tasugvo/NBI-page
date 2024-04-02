@@ -1,0 +1,74 @@
+.know_us {
+  padding: 15px;
+  height: 40vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.know_us>.details {
+  padding-left: 15px;
+  width: 48%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.know_us>.details>h2 {
+  color: #006AB7;
+}
+.know_us>.details>p {
+  color: #000000;
+  text-align: justify;
+  font-size: 13px;
+}
+.know_us>.details>button {
+  padding: 8px 10px;
+
+  color: #F7F3ED;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 20px;
+  background-color: #006AB7;
+}
+
+.know_us_image {
+  padding: 20px;  
+  width: 33vh;
+  height: 36vh;
+
+  border-radius: 20px;
+  background-image: url("/src/assets/images/service-room.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.know_us_image>.image_detail {
+  padding: 20px;
+
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: #F7F3ED;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.know_us_image>.image_detail>h3 {
+  font-size: 15px;
+}
+.know_us_image>.image_detail>p {
+  font-size: 13px;
+}

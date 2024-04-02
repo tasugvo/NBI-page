@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  height: 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header>img {
+  max-height: 100%;
+
+  object-fit: cover;
+}
+
+header>nav {
+  padding: 0 20px;
+  display: flex;
+  gap: 2vw;
+}
+
+header>nav>button {
+  text-transform: uppercase;
+  background-color: #F7F3ED;
+
+  border: none;
+
+  cursor: pointer;
+}
