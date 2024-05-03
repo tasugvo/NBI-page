@@ -1,5 +1,6 @@
 .location {
   padding: 15px;
+  width: 100%;
   height: 40vh;
   max-height: 570px;
 
@@ -66,4 +67,35 @@
 .phone_number {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 599px) {
+  .location {
+    height: 80vh;
+  
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .location::after {
+    top: 0;
+  }
+
+  .location>.map {
+    width: 100%;
+  }
+
+  .location_detail {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+  
+  }
+  .location_detail>div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

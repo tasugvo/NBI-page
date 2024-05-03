@@ -69,7 +69,7 @@
   content: "";
 
   width: 95%;
-  height: 93%;
+  height: 75%;
 
   border-top-left-radius: 103px;
   border-bottom-left-radius: 103px;
@@ -128,6 +128,7 @@
     justify-content: center;
   }
   .presentation_image::after { 
+    height: 93%;
     border-radius: 103px;
   
     position: absolute;
