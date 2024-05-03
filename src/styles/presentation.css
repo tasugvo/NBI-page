@@ -1,6 +1,8 @@
 .presentation {
+  margin: 10px;
   padding: 15px;
-  height: 40vh;
+  height: 60vh;
+  max-width: 1200px;
 
   border-radius: 20px;
   background-color: #E5E0E0;
@@ -9,7 +11,9 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .presentation>.info {
+  margin: 0 auto;
   height: 100%;
   width: 52%;
 
@@ -19,6 +23,7 @@
   justify-content: center;
   gap: 5%;
 
+  overflow: hidden;
 }
 .presentation>.info>h1 {
   color: #006AB7;
@@ -35,16 +40,24 @@
 
   color: #F7F3ED;
   font-weight: 600;
+  font-size: 18px;
   text-transform: uppercase;
 
   border: none;
   border-radius: 20px;
   background-color: #006AB7;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .presentation_image {
   height: 100%;
   width: 41%;
+  max-width: 35vh;
 
   display: flex;
   align-items: center;
@@ -81,3 +94,84 @@
   z-index: 2;
   transform: translate(15px, 0);
 }
+
+@media screen and (max-width: 599px) {
+  .presentation {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .presentation>.info {
+    width: 100%;
+    height: 50%;
+
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .presentation .info h1{
+    font-size: 32px;
+    text-align: center;
+  }
+  .presentation>.info>p {
+    width: 100%;
+    text-align: center;
+  }
+  .presentation>.info>button {
+    width: 100%;
+  }
+
+  .presentation_image {
+    height: 50%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .presentation_image::after { 
+    border-radius: 103px;
+  
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .presentation_image>img {
+    max-width: 90%;
+    max-height: 100%;
+  
+    border-radius: 103px;
+    background-color: transparent;
+  
+    object-fit: cover;
+  
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .presentation {
+    padding: 10px;
+  }
+  .presentation>.info {
+    gap: 5%;
+  }
+  .presentation>.info>h1 {
+    font-size: 27px;
+  }
+  .presentation>.info>p {
+    font-size: 14px;
+  }
+  .presentation>.info>button {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .presentation>.info>button>.button_text {
+    display: none;
+  }
+}
+
+

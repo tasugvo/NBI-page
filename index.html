@@ -9,102 +9,127 @@
 <body>
   <header>
     <img src="src/assets/images/nbi-logo.png" alt="logotipo nbi">
-    <nav>
-      <button>a clínica</button>
-      <button>especialidades</button>
-      <button>galeria</button>
-      <button>equipe</button>
-      <button>noticias</button>
-      <button>contato</button>
-    </nav>
+    <div class="menu">
+      <div class="small_menu">
+        <span>MENU</span>
+        <img src="./src/assets/icons/list-menu.svg" alt="">
+      </div>
+      <nav class="large_menu">
+        <button><a href="#presentation">a clínica</a></button>
+        <button><a href="#specialities">especialidades</a></button>
+        <button><a href="#know_us">galeria</a></button>
+        <button><a href="#team">equipe</a></button>
+        <button><a href="#location">noticias</a></button>
+        <button><a href="#social_media">contato</a></button>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <div class="presentation">
-      <div class="info">
-        <h1>Uma clínica que nasceu para fazer você sorrir!</h1>
-        <p class="detail">+ de 25 anos mostrando que o bom da vida é sorrir</p>
-        <button class="contact_us">AGENDE SUA CONSULTA AGORA: (71) 3270-7500</button>
-      </div>
-      <div class="presentation_image">
-        <img src="src/assets/images/presentation-image.png" alt="modelo sorrindo">
-      </div>
-    </div>
-
-    <div class="specialities">
-      <h2>especialidades</h2>
-      <div class="card_area">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#006ab7" viewBox="0 0 256 256"><path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path></svg>
-        <div class="speciality_card">
-          <h3>Implantodontia</h3>
-          <p>Implantes osseointegrados e prótese sobre implantes para repor dentes perdidos.</p>
-          <button>saiba mais</button>
+    <section id="presentation">
+      <div class="presentation">
+        <div class="info">
+          <h1>Uma clínica que nasceu para fazer você sorrir!</h1>
+          <p class="detail">+ de 25 anos mostrando que o bom da vida é sorrir</p>
+          <button class="contact_us">
+            <span class="button_text">AGENDE SUA CONSULTA AGORA:</span>
+            <span>(71) 3270-7500</span>          
+          </button>
         </div>
-
-        <div class="speciality_card">
-          <h3>Prótese</h3>
-          <p>Recolocação dos dentes destruídos ou perdidos e dos tecidos contíguos.</p>
-          <button>saiba mais</button>
-        </div>
-
-        <div class="speciality_card">
-          <h3>Implantodontia</h3>
-          <p>A harmonização orofacial é o equilíbrio entre a parte funcional e estética do conjunto face.</p>
-          <button>saiba mais</button>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#006ab7" viewBox="0 0 256 256"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
-      </div>
-    </div>
-
-    <div class="know_us">
-      <div class="details">
-        <h2>Conheça a NBI</h2>
-        <p>
-          A história do NIB – Núcleo Baiano de Implantes – começou em 1996, com a ideia de 3 especialistas que se juntaram para montar uma clínica com foco em implantes, quando a especialidade ainda era pouco acessível na Bahia.
-          Logo, o pioneirismo se transformou em referência. A clínica, que ocupava uma sala no bairro do Itaigara, hoje está localizada em uma belíssima casa com 3 andares, 600m², 8 consultórios, 2 centros cirúrgicos, sala de repouso pós-cirúrgico, laboratório de próteses próprio, 2 recepções, auditório para 20 pessoas e acessibilidade para idosos e pessoas com deficiência física.
-        </p>
-        <button>nossa localização</button>
-      </div>
-      <div class="know_us_image">
-        <div class="image_detail">
-          <h3>Sala de atendimento</h3>
-          <p>Tratamos cada caso de forma personalizada</p>
+        <div class="presentation_image">
+          <img src="src/assets/images/presentation-image.png" alt="modelo sorrindo">
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="team">
-      <h2>Nossa Equipe</h2>
-      <p>
-        Profissionais especializados, alguns mestres em implantodondia com mais de 20 anos de experiência, formam a equipe do NBI. No NBI, o atendimento é marcante e acolhedor, buscando sempre uma relação diferenciada entre profissional e paciente, com cada caso sendo tratado de forma personalizada.
-        <br>
-        <br>
-        Para garantir uma maior qualidade assistencial, o Day Hospital do NBI conta com a parceria do GAPS – Grupo de Anestesia Penildo Silva, do Hospital da Bahia, que também oferece todo o suporte em caso de necessidade emergencial. 
-      </p>
-      <button>conheça mais</button>
-      <img src="src/assets/images/team-image.png" alt="">
-    </div>
-
-    <div class="location">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.7172172665084!2d-38.460686095041964!3d-12.999012969902253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b6901a6c995%3A0x390d6bef9405f321!2sNBI%20-%20N%C3%BAcleo%20Baiano%20de%20Implantes!5e0!3m2!1spt-BR!2sbr!4v1712078552545!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="location_detail">
-        <div class="address">
-          <h2>Localização:</h2>
-          <p>Rua Almeida Garret, 59 - Itaigara,<br>Salvador - BA, CEP: 41825-320</p>
+    <section id="specialities">
+      <div class="specialities">
+        <h2>especialidades</h2>
+        <div class="card_area">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#006ab7" viewBox="0 0 256 256"><path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path></svg>
+          <div class="speciality_card">
+            <h3>Implantodontia</h3>
+            <p>Implantes osseointegrados e prótese sobre implantes para repor dentes perdidos.</p>
+            <button>saiba mais</button>
+          </div>
+  
+          <div class="speciality_card">
+            <h3>Prótese</h3>
+            <p>Recolocação dos dentes destruídos ou perdidos e dos tecidos contíguos.</p>
+            <button>saiba mais</button>
+          </div>
+  
+          <div class="speciality_card">
+            <h3>Implantodontia</h3>
+            <p>A harmonização orofacial é o equilíbrio entre a parte funcional e estética do conjunto face.</p>
+            <button>saiba mais</button>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#006ab7" viewBox="0 0 256 256"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
         </div>
-        <div class="phone">
-          <h2>Central de Atendimento:</h2>
-          <span>Entre em contato atravez</span>
-          <div class="phone_number">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewBox="0 0 256 256"><path d="M224,154.8l-47.09-21.11-.18-.08a19.94,19.94,0,0,0-19,1.75,13.08,13.08,0,0,0-1.12.84l-22.31,19c-13-7.05-26.43-20.37-33.49-33.21l19.06-22.66a11.76,11.76,0,0,0,.85-1.15,20,20,0,0,0,1.66-18.83,1.42,1.42,0,0,1-.08-.18L101.2,32A20.06,20.06,0,0,0,80.42,20.15,60.27,60.27,0,0,0,28,80c0,81.61,66.39,148,148,148a60.27,60.27,0,0,0,59.85-52.42A20.06,20.06,0,0,0,224,154.8ZM176,204A124.15,124.15,0,0,1,52,80,36.29,36.29,0,0,1,80.48,44.46l18.82,42L80.14,109.28a12,12,0,0,0-.86,1.16A20,20,0,0,0,78,130.08c9.42,19.28,28.83,38.56,48.31,48A20,20,0,0,0,146,176.63a11.63,11.63,0,0,0,1.11-.85l22.43-19.07,42,18.81A36.29,36.29,0,0,1,176,204Z"></path></svg>
-            <span>:  71 3270-7500</span>
+      </div>
+    </section>
+
+    <section id="know_us">
+      <div class="know_us">
+        <div class="details">
+          <h2>Conheça a NBI</h2>
+          <p>
+            A história do NIB – Núcleo Baiano de Implantes – começou em 1996, com a ideia de 3 especialistas que se juntaram para montar uma clínica com foco em implantes, quando a especialidade ainda era pouco acessível na Bahia.
+            Logo, o pioneirismo se transformou em referência. A clínica, que ocupava uma sala no bairro do Itaigara, hoje está localizada em uma belíssima casa com 3 andares, 600m², 8 consultórios, 2 centros cirúrgicos, sala de repouso pós-cirúrgico, laboratório de próteses próprio, 2 recepções, auditório para 20 pessoas e acessibilidade para idosos e pessoas com deficiência física.
+          </p>
+          <button>nossa localização</button>
+        </div>
+        <div class="know_us_image">
+          <div class="image_detail">
+            <h3>Sala de atendimento</h3>
+            <p>Tratamos cada caso de forma personalizada</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="team">
+      <div class="team">
+        <h2>Nossa Equipe</h2>
+        <p>
+          Profissionais especializados, alguns mestres em implantodondia com mais de 20 anos de experiência, formam a equipe do NBI. No NBI, o atendimento é marcante e acolhedor, buscando sempre uma relação diferenciada entre profissional e paciente, com cada caso sendo tratado de forma personalizada.
+          <br>
+          <br>
+          Para garantir uma maior qualidade assistencial, o Day Hospital do NBI conta com a parceria do GAPS – Grupo de Anestesia Penildo Silva, do Hospital da Bahia, que também oferece todo o suporte em caso de necessidade emergencial. 
+        </p>
+        <button>conheça mais</button>
+        <img src="src/assets/images/team-image.png" alt="">
+      </div>
+    </section>
+
+    <section id="location">
+      <div class="location">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1124.7172172665084!2d-38.460686095041964!3d-12.999012969902253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b6901a6c995%3A0x390d6bef9405f321!2sNBI%20-%20N%C3%BAcleo%20Baiano%20de%20Implantes!5e0!3m2!1spt-BR!2sbr!4v1712078552545!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="location_detail">
+          <div class="address">
+            <h2>Localização:</h2>
+            <p>Rua Almeida Garret, 59 - Itaigara,<br>Salvador - BA, CEP: 41825-320</p>
+          </div>
+          <div class="phone">
+            <h2>Central de Atendimento:</h2>
+            <span>Entre em contato atravez</span>
+            <div class="phone_number">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#000000" viewBox="0 0 256 256"><path d="M224,154.8l-47.09-21.11-.18-.08a19.94,19.94,0,0,0-19,1.75,13.08,13.08,0,0,0-1.12.84l-22.31,19c-13-7.05-26.43-20.37-33.49-33.21l19.06-22.66a11.76,11.76,0,0,0,.85-1.15,20,20,0,0,0,1.66-18.83,1.42,1.42,0,0,1-.08-.18L101.2,32A20.06,20.06,0,0,0,80.42,20.15,60.27,60.27,0,0,0,28,80c0,81.61,66.39,148,148,148a60.27,60.27,0,0,0,59.85-52.42A20.06,20.06,0,0,0,224,154.8ZM176,204A124.15,124.15,0,0,1,52,80,36.29,36.29,0,0,1,80.48,44.46l18.82,42L80.14,109.28a12,12,0,0,0-.86,1.16A20,20,0,0,0,78,130.08c9.42,19.28,28.83,38.56,48.31,48A20,20,0,0,0,146,176.63a11.63,11.63,0,0,0,1.11-.85l22.43-19.07,42,18.81A36.29,36.29,0,0,1,176,204Z"></path></svg>
+              <span>:  71 3270-7500</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
+
+  <button id="whatsapp_fixed">
+    <img src="./src/assets/icons/whatsapp.svg" alt="">
+  </button>
+
+  <footer id="social_media">
     <div class="social_media">
       Nossas redes sociais: 
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24ZM128,176a48,48,0,1,1,48-48A48.05,48.05,0,0,1,128,176Zm60-96a12,12,0,1,1,12-12A12,12,0,0,1,188,80Zm-28,48a32,32,0,1,1-32-32A32,32,0,0,1,160,128Z"></path></svg>
@@ -112,7 +137,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M187.3,159.06A36.09,36.09,0,0,1,152,188a84.09,84.09,0,0,1-84-84A36.09,36.09,0,0,1,96.94,68.7,12,12,0,0,1,110,75.1l11.48,23a12,12,0,0,1-.75,12l-8.52,12.78a44.56,44.56,0,0,0,20.91,20.91l12.78-8.52a12,12,0,0,1,12-.75l23,11.48A12,12,0,0,1,187.3,159.06ZM236,128A108,108,0,0,1,78.77,224.15L46.34,235A20,20,0,0,1,21,209.66l10.81-32.43A108,108,0,1,1,236,128Zm-24,0A84,84,0,1,0,55.27,170.06a12,12,0,0,1,1,9.81l-9.93,29.79,29.79-9.93a12.1,12.1,0,0,1,3.8-.62,12,12,0,0,1,6,1.62A84,84,0,0,0,212,128Z"></path></svg>
       <span>/nbi.implantesdentários</span>
     </div>
-    <img src="src/assets/images/frcom-logo.png" alt="">
   </footer>
+  <script type="module" src="./src/scripts/main.js" defer></script>
 </body>
 </html>

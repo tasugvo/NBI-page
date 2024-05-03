@@ -16,3 +16,41 @@
 body {
   background-color: #F7F3ED;
 }
+
+section {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#whatsapp_fixed {
+  width: 40px;
+  height: 40px;
+
+  background-color: #00ff00;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #fff;
+
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 10;  
+
+  cursor: pointer;
+}
+#whatsapp_fixed>img {
+  width: 85%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 0.5px), -50%);
+}
