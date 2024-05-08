@@ -68,6 +68,10 @@
   display: flex;
   align-items: center;
 }
+.phone_numbers {
+  display: flex;
+  flex-direction: column;
+}
 
 @media screen and (max-width: 599px) {
   .location {

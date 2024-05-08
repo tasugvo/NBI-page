@@ -1,13 +1,32 @@
-export function chatOnWhatsapp() {
-  let phoneNumber = "5571993210108";
-  const defaultMessage = "Olá Danilo, estava dando uma olhada no seu portfólio e resolvi te contactar."
+export function openSocialMediaLink(socialMedia) {
+  console.log(socialMedia)
+  let link;
+  switch (socialMedia) {
+    case "facebook":
+      link = "https://www.facebook.com/nbi.implantesdentarios/";
+      break
+    case "instagram":
+      link = "https://www.instagram.com/nbi.implantesdentarios/";
+      break
+    case "whatsapp":
+      link = chatOnWhatsapp();
+      break
+    default:
+      link = "#"
+  }
+  window.open(link, "_blank")
+}
+
+function chatOnWhatsapp() {
+  let phoneNumber = "5571996758432";
+  const defaultMessage = ""
   let whatsappLink;
   if (isMobileDevice()) {
     whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`
   } else {
     whatsappLink = `https://web.whatsapp.com/send?phone=+${phoneNumber}`;
   }
-  window.open(whatsappLink, "_blank")
+  return whatsappLink
 }
 
 function isMobileDevice() {

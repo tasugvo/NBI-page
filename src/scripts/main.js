@@ -1,4 +1,4 @@
-import { chatOnWhatsapp } from "./contact.js";
+import { openSocialMediaLink } from "./contact.js";
 import { toggleMenu } from "./topmenu.js";
 import { state } from "./data.js"
 import { appendSpecialityCard } from "./specialities.js";
@@ -10,12 +10,19 @@ function init() {
     item.addEventListener("click", () => toggleMenu());
   }
 
-  const whatsappFixed = document.getElementById("whatsapp_fixed");
-  whatsappFixed.addEventListener("click", () => chatOnWhatsapp());
-
   myHTMLToolsService.cleanElementInnerHTML("speciality_cards")
   for (const i in state.specialities) {
     appendSpecialityCard(i, state.specialities[i])
+  }
+
+  const footerIcons = document.querySelectorAll(".icon")
+  const contacts = ["instagram", "facebook", "whatsapp"]
+  for (const icon of footerIcons) {
+    for (const classItem of icon.classList) {
+      if (contacts.includes(classItem)) {
+        icon.addEventListener("click", () => openSocialMediaLink(classItem));
+      }
+    }
   }
 }
 
