@@ -72,7 +72,12 @@
   display: flex;
   flex-direction: column;
 }
-
+.phone_numbers span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
 @media screen and (max-width: 599px) {
   .location {
     height: 80vh;

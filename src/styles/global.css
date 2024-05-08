@@ -60,3 +60,7 @@ a {
   left: 50%;
   transform: translate(calc(-50% + 0.5px), -50%);
 }
+
+.icon {
+  cursor: pointer;
+}
