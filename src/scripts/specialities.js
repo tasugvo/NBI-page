@@ -1,5 +1,6 @@
 export function appendSpecialityCard(speciality) {
   const specialityCards = document.querySelector(".speciality_cards");
+  
   specialityCards.innerHTML += specialityCardTemplate(speciality.id, speciality.title, speciality.excerpt)
 }
 

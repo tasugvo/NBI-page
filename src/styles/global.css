@@ -48,7 +48,7 @@ button {
   background-color: #00ff00;
   border: 2px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 0 4px #fff;
+  box-shadow: 0 0 4px #000000;
 
   position: fixed;
   bottom: 5%;

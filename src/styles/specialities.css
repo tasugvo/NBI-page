@@ -1,6 +1,7 @@
 .specialities {
   padding: 15px;
   height: 40vh;
+  max-width: calc(100vw - 15px);
 
   display: flex;
   flex-direction: column;
@@ -15,31 +16,54 @@
 }
 .specialities>.card_area {
   width: 100%;
+  max-width: calc(100vw - 30px);
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  position: relative;
 }
+.specialities>.card_area>.icon {
+  padding: 2px;
+  position: absolute;
+
+  border-radius: 50%;
+  background-color: #F7F3ED;
+  box-shadow: 0 0 4px #000000;
+}
+.specialities>.card_area>.caret_left.icon {
+  left: -10px;
+}
+.specialities>.card_area>.caret_right.icon {
+  right: -10px;
+}
+
 .specialities>.card_area>.speciality_cards {
-  width: 100%;
+  padding-bottom: 10px;
   height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  overflow: hidden;
 }
 .speciality_card {
   padding: 15px;
   height: 100%;
   width: 20vw;
   min-width: 175px;
+  max-width: 180px;
   
   color: #F7F3ED;
   
   border-radius: 20px;
+  border: 2px solid #00000010;
   background-color: #006AB7;
+
 
   display: flex;
   flex-direction: column;
@@ -62,4 +86,8 @@
   background-color: #F7F3ED;
   border: none;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 599px) {
+
 }
