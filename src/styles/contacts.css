@@ -1,5 +1,5 @@
 footer {
-  padding: 20px 30px;
+  padding: 20px 0;
   width: 100%;
 
   color: #F7F3ED;
@@ -13,11 +13,21 @@ footer {
 }
 
 .social_media {
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-footer>img {
-  height: 41px;
+@media screen and (max-width: 520px) {
+  .social_media>span.text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .social_media>span.link_text {
+    display: none;
+  }
 }
