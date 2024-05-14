@@ -5,6 +5,7 @@
 @import url("./team.css");
 @import url("./location.css");
 @import url("./contacts.css");
+@import url("./read_more.css");
 
 *{
   padding: 0;
@@ -34,6 +35,10 @@ section {
 a {
   color: black;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 #whatsapp_fixed {

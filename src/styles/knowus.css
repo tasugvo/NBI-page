@@ -39,6 +39,11 @@
   border-radius: 20px;
   background-color: #006AB7;
 }
+.know_us>.details>button>* {
+  color: #F7F3ED;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
 .know_us_image {
   padding: 20px;  
