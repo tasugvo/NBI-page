@@ -1,5 +1,4 @@
 export function openSocialMediaLink(socialMedia) {
-  console.log(socialMedia)
   let link;
   switch (socialMedia) {
     case "facebook":

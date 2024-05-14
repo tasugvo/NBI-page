@@ -15,8 +15,8 @@ function init() {
     appendSpecialityCard(i, state.specialities[i])
   }
 
-  const footerIcons = document.querySelectorAll(".icon")
   const contacts = ["instagram", "facebook", "whatsapp"]
+  const footerIcons = document.querySelectorAll(".icon")
   for (const icon of footerIcons) {
     for (const classItem of icon.classList) {
       if (contacts.includes(classItem)) {
