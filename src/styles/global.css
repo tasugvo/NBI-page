@@ -1,13 +1,14 @@
-@import url("./topmenu.css");
-@import url("./presentation.css");
-@import url("./specialities.css");
-@import url("./knowus.css");
-@import url("./team.css");
-@import url("./location.css");
-@import url("./contacts.css");
-@import url("./read_more.css");
+@import url("../components/topmenu/topmenu.css");
+@import url("../components/presentation/presentation.css");
+@import url("../components/specialities/specialities.css");
+@import url("../components/knowus/knowus.css");
+@import url("../components/team/team.css");
+@import url("../components/location/location.css");
+@import url("../components/contact/contact.css");
+@import url("../components/read_more/read_more.css");
+@import url("./login.css");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -21,7 +22,6 @@ html {
 
 body {
   background-color: #F7F3ED;
-  
 }
 
 section {

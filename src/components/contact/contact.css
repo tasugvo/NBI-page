@@ -20,6 +20,12 @@ footer {
   gap: 10px;
 }
 
+.icons_area {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 @media screen and (max-width: 520px) {
   .social_media>span.text {
     display: none;

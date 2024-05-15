@@ -1,4 +1,30 @@
-export function openSocialMediaLink(socialMedia) {
+export const Contact = {};
+
+Contact.create = (footerData, contactData) => {
+  const footer = document.querySelector("footer .social_media");
+
+  const text = footer.querySelector(".text");
+  text.textContent = footerData.text;
+
+  const iconsArea = footer.querySelector(".icons_area");
+  for (const item of contactData) {
+    if (item.url) {
+      const image = document.createElement("img");
+      image.classList.add(item.name);
+      image.classList.add("icon")
+      image.src = `src/assets/icons/${item.name}.svg`;
+      image.alt = item.name;
+      iconsArea.appendChild(image)
+    }
+  }
+
+
+  const linkText = footer.querySelector(".link_text");
+  linkText.textContent = footerData.linkText;
+
+}
+
+Contact.openSocialMediaLink = (socialMedia) => {
   let link;
   switch (socialMedia) {
     case "facebook":
@@ -13,7 +39,7 @@ export function openSocialMediaLink(socialMedia) {
     default:
       link = "#"
   }
-  window.open(link, "_blank")
+  window.open(link, "_blank");
 }
 
 function chatOnWhatsapp() {

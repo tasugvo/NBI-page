@@ -1,6 +1,6 @@
-export const myHTMLToolsService = {}
+export const MyHTMLToolsService = {}
 
-myHTMLToolsService.cleanElementInnerHTML = (name, multiple) => {
+MyHTMLToolsService.cleanElementInnerHTML = (name, multiple) => {
   let element;
   if (multiple) {
     element = document.querySelectorAll(`.${name}`)
