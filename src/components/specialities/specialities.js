@@ -7,14 +7,13 @@ Specialities.cardTemplate = (index, title, excerpt) => {
   <div id="specialities_${index}" class="speciality_card">
     <h3>${title}</h3>
     <p>${excerpt}</p>
-    <button class="read_more_button">saiba mais</button>
+    <button class="read_more_button btn-white">saiba mais</button>
   </div>
   `
 }
 
 Specialities.appendCard = (speciality) => {
   const specialityCards = document.querySelector(".speciality_cards");
-  
   specialityCards.innerHTML += Specialities.cardTemplate(speciality.id, speciality.title, speciality.excerpt)
 }
 

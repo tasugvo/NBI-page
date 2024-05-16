@@ -21,5 +21,4 @@ MyHTMLToolsService.cleanElementInnerHTML = (name, multiple) => {
       return
     }
   }
-
 }

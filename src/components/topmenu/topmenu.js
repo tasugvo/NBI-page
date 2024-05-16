@@ -13,12 +13,16 @@ TopMenu.create = (menuItems) => {
   }
 }
 
-TopMenu.toggleMenu = () => {
+TopMenu.toggle = () => {
   const largeMenu = document.querySelector(".large_menu");
-  const isOpen = largeMenu.classList.contains("dropdown")
+  const fade = document.querySelector(".large_menu_fade");
+  fade.addEventListener("click", () => TopMenu.toggle());
+  const isOpen = largeMenu.classList.contains("dropdown");
   if (isOpen) {
-    largeMenu.classList.remove("dropdown")
+    largeMenu.classList.remove("dropdown");
+    fade.classList.add("hide");
   } else {
-    largeMenu.classList.add("dropdown")
+    largeMenu.classList.add("dropdown");
+    fade.classList.remove("hide");
   }
 }
