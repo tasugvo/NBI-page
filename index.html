@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <img src="src/assets/images/nbi-logo.png" alt="logotipo nbi">
+    <img id="login_hidden_button" src="src/assets/images/nbi-logo.png" alt="logotipo nbi">
     <div class="menu">
       <div class="small_menu">
         <span>MENU</span>
@@ -18,7 +18,9 @@
       <nav class="large_menu"></nav>
     </div>
   </header>
+  <div class="large_menu_fade hide"></div>
 
+  <div class="login_box_fade hide"></div>
   <div class="login_box hide">
     <h1>Recursos administrativos</h1>
     <p>Caso seja um administrador, autentique-se</p>
@@ -45,7 +47,7 @@
         <div class="info">
           <h1></h1>
           <p class="detail"></p>
-          <button class="contact_us whatsapp icon">
+          <button class="contact_us btn-blue whatsapp icon">
             <span class="button_text"></span>
             <span class="whatsapp"></span>          
           </button>
@@ -60,9 +62,9 @@
       <div class="specialities">
         <h2>especialidades</h2>
         <div class="card_area">          
-          <img src="./src/assets/icons/caret-left.svg" alt="voltar" class="caret_left icon">
+          <img src="src/assets/icons/caretLeft.svg" alt="voltar" class="caret_left icon">
           <div class="speciality_cards"></div>
-          <img src="./src/assets/icons/caret-right.svg" alt="avançar" class="caret_right icon">
+          <img src="src/assets/icons/caretRight.svg" alt="avançar" class="caret_right icon">
         </div>
       </div>
     </section>
@@ -72,7 +74,7 @@
         <div class="details">
           <h2></h2>
           <p></p>
-          <button><a href="#location"></a></button>
+          <button class="btn-blue"><a href="#location"></a></button>
         </div>
         <div class="know_us_image">
           <div class="image_detail">
@@ -84,10 +86,10 @@
     </section>
 
     <section id="team">
-      <div class="team">
+      <div id="team_0" class="team">
         <h2></h2>
         <p></p>
-        <button class="read_more_button"></button>
+        <button class="read_more_button btn-white"></button>
         <img src="src/assets/images/team-image.png" alt="">
       </div>
     </section>
@@ -118,16 +120,17 @@
     </section>
   </main>
 
-  <div class="fade hide"></div>
+  <div class="read_more_fade hide"></div>
   <div class="read_more hide">
     <button class="close">
-      <img src="./src/assets/icons/close.png" alt="close" class="icon">
+      <img src="src/assets/icons/close.png" alt="close" class="close icon">
     </button>
     <img src="" alt="" class="banner">
     <h1 class="title"></h1>
     <h2 class="subtitle"></h2>
     <p class="description"></p>
     <ul class="topics"></ul>
+    <ul class="members"></ul>
   </div>
 
   <button id="whatsapp_fixed">
