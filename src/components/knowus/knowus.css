@@ -27,24 +27,6 @@
   text-align: justify;
   font-size: 13px;
 }
-.know_us>.details>button {
-  padding: 8px 10px;
-  width: 100%;
-
-  color: #F7F3ED;
-  font-weight: 600;
-  text-transform: uppercase;
-
-  border: none;
-  border-radius: 20px;
-  background-color: #006AB7;
-}
-.know_us>.details>button>* {
-  color: #F7F3ED;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 .know_us_image {
   padding: 20px;  
   width: 33vh;

@@ -1,0 +1,41 @@
+.button_area {
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  width: 100%;
+  
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+button.btn-blue {
+  color: #F7F3ED;
+  background-color: #006AB7;
+}
+button.btn-white {
+  color: #006AB7;
+  background-color: #F7F3ED;
+}
+button.btn-blue *,
+button.btn-white * {
+  color: inherit;
+}

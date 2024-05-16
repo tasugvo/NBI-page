@@ -52,12 +52,13 @@
 }
 
 .read_more>button {
+  padding: 0;
   width: 23px;
   height: 23px;
 
-  border: 2px solid #006AB7;
+  border: 2px solid #B76A00;
   border-radius: 2px;
-  background-color: #006AB7;
+  background-color: #B76A00;
 
   display: flex;
   align-items: center;
@@ -72,23 +73,4 @@
 .read_more>button>img {
   width: 90%;
   height: 90%;
-}
-
-.fade {
-  width: 100%;
-  height: 100%;
-
-  background-color: #00000088;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-
-  cursor: pointer;
-}
-
-.fade.hide {
-  display: none;
-  transition: 0.3s ease;
 }

@@ -47,13 +47,8 @@ header>.menu>.large_menu {
 }
 
 header>.menu>nav>button {
-  text-transform: uppercase;
   font-weight: 900;
   background-color: #F7F3ED;
-
-  border: none;
-
-  cursor: pointer;
 }
 
 @media screen and (max-width: 779px) {

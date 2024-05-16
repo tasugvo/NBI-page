@@ -36,22 +36,7 @@
   text-shadow: 0 3px 3px #0005;
 }
 .presentation>.info>button {
-  padding: 8px 10px;
-
-  color: #F7F3ED;
-  font-weight: 600;
   font-size: 18px;
-  text-transform: uppercase;
-
-  border: none;
-  border-radius: 20px;
-  background-color: #006AB7;
-
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
 }
 
 .presentation_image {
