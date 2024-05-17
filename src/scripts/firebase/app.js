@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyDjvaJKm9tQ4-pfm8jhOnjaCPhmoPuR2Yg",
   authDomain: "nbi-site-db.firebaseapp.com",
   projectId: "nbi-site-db",

@@ -16,8 +16,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 3;
+  z-index: 10;
 }
 .login_box.hide {
+  display: none;
+}
+
+.login_box .unlogged,
+.login_box .logged {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.login_box .unlogged.hide,
+.login_box .logged.hide {
   display: none;
 }

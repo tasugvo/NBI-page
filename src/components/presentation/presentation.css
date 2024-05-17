@@ -25,11 +25,11 @@
 
   overflow: hidden;
 }
-.presentation>.info>h1 {
+.presentation>.info h1 {
   color: #006AB7;
   font-size: 42px;
 }
-.presentation>.info>p {
+.presentation>.info p {
   color: #4A4A4A;
   font-size: 14px;
   font-weight: 600;

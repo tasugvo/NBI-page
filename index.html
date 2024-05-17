@@ -23,21 +23,32 @@
   <div class="login_box_fade hide"></div>
   <div class="login_box hide">
     <h1>Recursos administrativos</h1>
-    <p>Caso seja um administrador, autentique-se</p>
-    <div class="input_wrap">
-      <span>E-mail</span>
-      <input id="login_email" type="text">
-    </div>
-    <div class="password_input">
+    <div class="unlogged">
+      <p>Caso seja um administrador, autentique-se</p>
       <div class="input_wrap">
-        <span>Senha</span>
-        <input type="password">
+        <span>E-mail</span>
+        <!-- <input id="login_email" type="text" value="nbiprojectimplantes@gmail.com"> -->
+        <input id="login_email" type="text">
       </div>
-      <img src="" alt="" class="icon">
+      <div class="password_input">
+        <div class="input_wrap">
+          <span>Senha</span>
+          <!-- <input id="login_password" type="password" value="nb1pr0j3c7"> -->
+          <input id="login_password" type="password">
+        </div>
+        <img src="" alt="" class="icon">
+      </div>
+      <div class="button_area">
+        <button class="enter btn-blue">entrar</button>
+        <button class="cancel btn-white">cancelar</button>
+      </div>
     </div>
-    <div class="button_area">
-      <button>entrar</button>
-      <button>cancelar</button>
+    <div class="logged hide">
+      <p>Deseja realmente sair?</p>
+      <div class="button_area">
+        <button class="exit btn-blue">sair</button>
+        <button class="cancel btn-white">cancelar</button>
+      </div>
     </div>
   </div>
 
@@ -45,15 +56,27 @@
     <section id="presentation">
       <div class="presentation">
         <div class="info">
-          <h1></h1>
-          <p class="detail"></p>
+          <div>
+            <h1 class="title"></h1>
+            <img src="./src/assets/icons/edit.svg" alt="" class="edit icon hide">
+          </div>
+          <div>
+            <p class="detail"></p>
+            <img src="./src/assets/icons/edit.svg" alt="" class="edit icon hide">
+          </div>
           <button class="contact_us btn-blue whatsapp icon">
-            <span class="button_text"></span>
-            <span class="whatsapp"></span>          
+            <div>
+              <span class="button_text"></span>
+              <img src="./src/assets/icons/edit.svg" alt="" class="edit icon hide">
+            </div>
+            <div>
+              <span class="whatsapp"></span>          
+              <img src="./src/assets/icons/edit.svg" alt="" class="edit icon hide">
+            </div>
           </button>
         </div>
         <div class="presentation_image">
-          <img src="src/assets/images/presentation-image.png" alt="modelo sorrindo">
+          <img src="./src/assets/images/nbi-logo.png" alt="modelo sorrindo">
         </div>
       </div>
     </section>
@@ -122,7 +145,7 @@
 
   <div class="read_more_fade hide"></div>
   <div class="read_more hide">
-    <button class="close">
+    <button class="close btn-blue">
       <img src="src/assets/icons/close.png" alt="close" class="close icon">
     </button>
     <img src="" alt="" class="banner">
@@ -131,6 +154,11 @@
     <p class="description"></p>
     <ul class="topics"></ul>
     <ul class="members"></ul>
+  </div>
+
+  <div class="toast hide">
+    <h1 class="title"></h1>
+    <span class="message"></span>
   </div>
 
   <button id="whatsapp_fixed">

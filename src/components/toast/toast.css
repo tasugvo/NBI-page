@@ -1,0 +1,23 @@
+.toast {
+  padding: 15px;
+
+  border-radius: 20px;
+  border: 2px solid #006AB7;
+  background-color: #F7F3ED;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  position: fixed;
+  bottom: 10px;
+  left: 5px;
+  z-index: 11;
+}
+.toast.rise_animation{
+  animation: riseAndDown 3s forwards;
+}
+.toast.hide {
+  display: none;
+}

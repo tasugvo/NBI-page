@@ -26,13 +26,23 @@ button {
 
   cursor: pointer;
 }
+button:active {
+  position: relative;
+  top: 2px;
+}
 
 button.btn-blue {
   color: #F7F3ED;
   background-color: #006AB7;
 }
+button.btn-blue:hover {
+  background-color: #006AB7CC;
+}
 button.btn-white {
   color: #006AB7;
+  background-color: #F7F3EDF0;
+}
+button.btn-white:hover {
   background-color: #F7F3ED;
 }
 button.btn-blue *,

@@ -39,19 +39,19 @@ header>.menu>.small_menu>* {
 
 header>.menu>.large_menu.dropdown,
 header>.menu>.large_menu {
-  padding: 0 20px;
+  margin-right: 10px;
 
   display: flex;
   flex-direction: row;
-  gap: 2vw;
 }
 
 header>.menu>nav>button {
   font-weight: 900;
+  text-wrap: nowrap;
   background-color: #F7F3ED;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 810px) {
   header>.menu>.small_menu {
     display: flex;
     align-items: center;
@@ -63,8 +63,8 @@ header>.menu>nav>button {
   }
   header>.menu>.large_menu.dropdown {
     padding: 10px 20px;
+    margin-right: 0px;
 
-    border: 3px solid #00000022;
     border-top: none;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -74,10 +74,10 @@ header>.menu>nav>button {
     flex-direction: column;
     gap: 10px;
 
-    position: absolute;
-    right: 0;
+    position: fixed;
+    top: 110px;
+    right: 0px;
     z-index: 10;
-    top: 100%;
   }
 }
 

@@ -28,10 +28,16 @@
 .specialities>.card_area>.icon {
   padding: 2px;
   position: absolute;
+  z-index: 1;
 
   border-radius: 50%;
   background-color: #F7F3ED;
   box-shadow: 0 0 4px #000000;
+}
+.specialities>.card_area>.icon:hover {
+  padding: 4px;
+  box-shadow: 0 0 6px #000000ee;
+  transition: all 0.1s ease;
 }
 .specialities>.card_area>.caret_left.icon {
   left: -10px;
@@ -41,7 +47,7 @@
 }
 
 .specialities>.card_area>.speciality_cards {
-  padding-bottom: 10px;
+  padding: 5px 0;
   height: 100%;
 
   display: flex;
@@ -70,6 +76,11 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 20px;
+}
+.speciality_card:hover {
+  transition: all 0.4s ease;
+  position: relative;
+  bottom: 4px;
 }
 .speciality_card>h3 {
   text-transform: capitalize;

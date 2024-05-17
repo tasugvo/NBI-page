@@ -9,9 +9,11 @@ import { KnowUs } from "../components/knowus/knowus.js";
 import { Team } from "../components/team/team.js";
 import { Location } from "../components/location/location.js";
 import { Login } from "../components/login/login.js";
+import { FireStorage } from "./firebase/storage.js";
 
 export const state ={
   data: null,
+  userUid: null,
   topMenu: {
     items: null
   },
@@ -23,7 +25,6 @@ export const state ={
 
 async function init() {
   state.data = await fetchDataFromFirebase("section");
-
   // TopMenu
   const loginHiddenButton = document.querySelector("#login_hidden_button");
   loginHiddenButton.addEventListener("click", () => Login.toggle())
@@ -38,12 +39,13 @@ async function init() {
   const presentationData = state.data.find(item => item.id === "presentation").data.info;
   const contactData = state.data.find(item => item.id === "contacts").data;
   Presentation.create(presentationData, contactData);
-
+  const presentationImage = document.querySelector(".presentation_image img");
+  const imageUrl = await FireStorage.getFileUrl("gs://nbi-site-db.appspot.com/presentation/presentation-image.png");
+  presentationImage.src = imageUrl
   // Especialidades
   attachEventToCarouselPreviousButton();
   attachEventToCarouselNextButton();
   updateSpecialityCarousel();
-
   // Conheça-nos
   const knowUsData = state.data.find(item => item.id === "knowus").data.info
   KnowUs.create(knowUsData)
@@ -60,7 +62,16 @@ async function init() {
   // Detalhes
   const btnCloseReadMore = document.querySelector(".read_more>.close");
   btnCloseReadMore.addEventListener("click", () => ReadMore.toggle());
-
+  // Login
+  const btnEnter = document.querySelector(".login_box .button_area .enter");
+  btnEnter.addEventListener("click", async () => await Login.enter(state.userUid))
+  const btnsCancel = document.querySelectorAll(".login_box .button_area .cancel");
+  const btnExit = document.querySelector(".login_box .button_area .exit");
+  btnExit.addEventListener("click", async () => await Login.exit(state.userUid))
+  for (const button of btnsCancel) {
+    button.addEventListener("click", async () => await Login.toggle())
+  }
+  //
   attachEventToReadMoreButtons();
 }
 
