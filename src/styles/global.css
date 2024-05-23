@@ -66,6 +66,9 @@ a {
   left: 50%;
   transform: translate(calc(-50% + 0.5px), -50%);
 }
+#whatsapp_fixed:active {
+  top: initial;
+}
 
 .icon {
   cursor: pointer;
